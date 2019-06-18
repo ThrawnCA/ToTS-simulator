@@ -1,100 +1,100 @@
 Start 400/10/10/4/0/0/0
 # Floor 3
-key blue
-key yellow
-key yellow
-key yellow
-key yellow
-key yellow
+blue_key
+yellow_key
+yellow_key
+yellow_key
+yellow_key
+yellow_key
 blue_elixir 1
 blue_elixir 1
 blue_elixir 1
 green_slime
 red_slime
-door yellow
+yellow_door
 # Floor 4
-door yellow
+yellow_door
 green_slime
 red_slime
-door yellow
+yellow_door
 # Floor 5
 green_slime
 green_slime
 red_slime
-door yellow
+yellow_door
 sword 1
 red_slime
-door yellow
+yellow_door
 green_slime
-key yellow
-key yellow
-key yellow
-key yellow
+yellow_key
+yellow_key
+yellow_key
+yellow_key
 # Floor 4
-door yellow
+yellow_door
 priest
 red_crystal 1
 red_elixir 1
 # Floor 5
 bat
-key yellow
-door yellow
+yellow_key
+yellow_door
 red_slime
 bat
-door yellow
+yellow_door
 # Floor 6
 red_slime
 priest
-key yellow
-door yellow
+yellow_key
+yellow_door
 red_slime
-key yellow
-key yellow
-key yellow
-key yellow
-door yellow
-door yellow
-door yellow
+yellow_key
+yellow_key
+yellow_key
+yellow_key
+yellow_door
+yellow_door
+yellow_door
 red_slime
 # Floor 7
-door yellow
-door yellow
+yellow_door
+yellow_door
 priest
 skeleton_b
 merchant_floor7
-door yellow
+yellow_door
 green_slime
 red_slime
 green_slime
-door yellow
-door yellow
+yellow_door
+yellow_door
 # Floor 8
-door yellow
-door yellow
-door yellow
-key yellow
-key yellow
-key yellow
+yellow_door
+yellow_door
+yellow_door
+yellow_key
+yellow_key
+yellow_key
 # Floor 9
-door yellow
+yellow_door
 green_slime
 red_elixir 1
 shield 1
-door yellow
-door yellow
-key yellow
-key yellow
+yellow_door
+yellow_door
+yellow_key
+yellow_key
 red_crystal 1
 red_slime
-door yellow
+yellow_door
 bat
-key yellow
+yellow_key
 blue_crystal 1
 green_slime
 # Floor 8
 green_slime
 # Floor 7
-door yellow
+yellow_door
 bat
 red_elixir 1
 red_crystal 1
@@ -106,76 +106,76 @@ red_elixir 1
 green_slime
 # Floor 3
 bat
-door yellow
+yellow_door
 priest
-key yellow
+yellow_key
 red_elixir 1
 blue_crystal 1
 # Floor 4
 green_slime
-door yellow
+yellow_door
 bat
 green_slime
 green_slime
-key yellow
-key yellow
-key yellow
+yellow_key
+yellow_key
+yellow_key
 # Floor 1
-door yellow
+yellow_door
 bat
 priest
 bat
-door yellow
-key yellow
+yellow_door
+yellow_key
 red_elixir 1
 blue_crystal 1
 red_crystal 1
 # Floor 5
-door yellow
+yellow_door
 bat
-key yellow
-key yellow
+yellow_key
+yellow_key
 # Floor 9
 bat
-door yellow
-door blue
+yellow_door
+blue_door
 red_elixir 1
 # Floor 10
-door yellow
+yellow_door
 skeleton_c
 blue_crystal 1
 # Floor 7
-door yellow
+yellow_door
 bat
-key yellow
-key yellow
+yellow_key
+yellow_key
 # Floor 6
 skeleton_c
 green_slime
-door yellow
+yellow_door
 bat
 blue_crystal 1
 priest
-key yellow
+yellow_key
 green_slime
 # Floor 3
-door yellow
+yellow_door
 skeleton_c
-key yellow
+yellow_key
 red_elixir 1
 red_crystal 1
 # Floor 9
-door yellow
+yellow_door
 priest
-key yellow
+yellow_key
 red_elixir 1
 # Floor 7
 skeleton_c
 red_elixir 1
-key yellow
-key yellow
+yellow_key
+yellow_key
 # Floor 6
-door yellow
+yellow_door
 bat
 red_elixir 1
 merchant_floor6
@@ -184,23 +184,23 @@ priest
 bat
 skeleton_c
 bat
-door yellow
+yellow_door
 green_slime
 bat
-door blue
-key yellow
+blue_door
+yellow_key
 red_crystal 1
-key yellow
+yellow_key
 blue_crystal 1
 # Floor 10
-door yellow
+yellow_door
 priest
 priest
-door yellow
+yellow_door
 skeleton_c
 red_crystal 1
 # Floor 1
-door yellow
+yellow_door
 bat
 green_slime
 green_slime
@@ -208,63 +208,63 @@ blue_elixir 1
 # Floor 5
 skeleton_b
 blue_crystal 1
-key yellow
+yellow_key
 red_elixir 1
 orb_wisdom
 # Floor 1
-door yellow
+yellow_door
 red_elixir 1
 skeleton_c
-door yellow
-key yellow
+yellow_door
+yellow_key
 skeleton_b
-door yellow
-key yellow
-key yellow
+yellow_door
+yellow_key
+yellow_key
 orb_flying
 red_elixir 1
 red_elixir 1
 # Floor 3
-door yellow
+yellow_door
 priest
-key yellow
+yellow_key
 red_elixir 1
 # Floor 4
 priest
-door yellow
-key yellow
-key blue
+yellow_door
+yellow_key
+blue_key
 red_elixir 1
-door yellow
+yellow_door
 red_slime
 skeleton_c
-door yellow
+yellow_door
 skeleton_b
-key yellow
+yellow_key
 blue_elixir 1
 # Floor 7
 skeleton_b
 blue_elixir 1
-key yellow
-key yellow
-door yellow
+yellow_key
+yellow_key
+yellow_door
 red_slime
 priest
 blue_elixir 1
 # Floor 8
 priest
-door yellow
+yellow_door
 gate-keeper_c
 gate-keeper_c
 blue_elixir 1
 red_elixir 1
-key yellow
-key yellow
-key red
+yellow_key
+yellow_key
+red_key
 # Floor 10
-door yellow
+yellow_door
 blue_elixir 1
-door red
+red_door
 skeleton_c
 skeleton_c
 skeleton_c
@@ -283,7 +283,7 @@ red_crystal 1
 blue_crystal 1
 blue_crystal 1
 blue_crystal 1
-key yellow
-key yellow
-key yellow
+yellow_key
+yellow_key
+yellow_key
 print

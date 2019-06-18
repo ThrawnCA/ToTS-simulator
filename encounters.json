@@ -40,6 +40,13 @@
 "sword":{"type":"simple","levelled":true,"offense":10},
 "shield":{"type":"simple","levelled":true,"defense":10},
 
+"yellow_key":{"type":"simple","keys":{"yellow":1}},
+"blue_key":{"type":"simple","keys":{"blue":1}},
+"red_key":{"type":"simple","keys":{"red":1}},
+"yellow_door":{"type":"simple","keys":{"yellow":-1}},
+"blue_door":{"type":"simple","keys":{"blue":-1}},
+"red_door":{"type":"simple","keys":{"red":-1}},
+
 "orb_flying":{"type":"simple","inventory":{"orb_flying":1}},
 "orb_wisdom":{"type":"simple","inventory":{"orb_wisdom":1}},
 "merchant_floor6":{"type":"simple","gold":-50,"keys":{"blue":1}},
