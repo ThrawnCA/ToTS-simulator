@@ -19,19 +19,23 @@
 "giant_octopus":{"type":"monster","life":1200,"offense":180,"defense":20,"gold":50},
 "vampire":{"type":"monster","life":444,"offense":199,"defense":66,"gold":144},
 
+"magic_master":{"type":"monster","life":5000,"offense":560,"defense":310,"gold":1000},
+
 "swordsman":{"type":"monster","life":100,"offense":680,"defense":50,"gold":55},
 "soldier":{"type":"monster","life":210,"offense":200,"defense":65,"gold":45},
 "ghost_soldier":{"type":"monster","life":220,"offense":180,"defense":30,"gold":35},
 "knight":{"type":"monster","life":160,"offense":230,"defense":105,"gold":65},
 "golden_knight":{"type":"monster","life":120,"offense":150,"defense":50,"gold":100},
-"dragon":{"type":"monster","life":1500,"offense":600,"defense":250,"gold":0},
+"dragon":{"type":"monster","life":1500,"offense":600,"defense":250,"gold":800},
 
 "slime_lord":{"type":"monster","life":360,"offense":310,"defense":20,"gold":40},
 "vampire_bat":{"type":"monster","life":200,"offense":390,"defense":90,"gold":50},
 "magician_a":{"type":"monster","life":200,"offense":380,"defense":130,"gold":90},
 "magician_b":{"type":"monster","life":220,"offense":370,"defense":110,"gold":80},
 "magic_sergeant":{"type":"monster","life":230,"offense":450,"defense":100,"gold":100},
-"dark_knight":{"type":"monster","life":180,"offense":430,"defense":210,"gold":0},
+"dark_knight":{"type":"monster","life":180,"offense":430,"defense":210,"gold":120},
+"gate-keeper_a":{"type":"monster","life":180,"offense":460,"defense":360,"gold":200},
+"magic_sergeant_zeno_depowered":{"type":"monster","life":800,"offense":500,"defense":100,"gold":500},
 
 "red_crystal":{"type":"simple","levelled":true,"offense":1},
 "blue_crystal":{"type":"simple","levelled":true,"defense":1},
