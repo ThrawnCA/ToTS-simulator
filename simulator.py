@@ -33,6 +33,8 @@ def simple_encounter(encounter, args):
     if 'keys' in encounter:
         for color in encounter['keys']:
             hero.keys[color] += encounter['keys'][color]
+            if hero.keys[color] < 0:
+                raise Exception("Not enough {} keys!".format(color))
     if 'inventory' in encounter:
         for item in encounter['inventory']:
             if item in hero.inventory:
