@@ -1,0 +1,289 @@
+Start 400/10/10/4/0/0/0
+# Floor 3
+key blue
+key yellow
+key yellow
+key yellow
+key yellow
+key yellow
+blue_elixir 1
+blue_elixir 1
+blue_elixir 1
+green_slime
+red_slime
+door yellow
+# Floor 4
+door yellow
+green_slime
+red_slime
+door yellow
+# Floor 5
+green_slime
+green_slime
+red_slime
+door yellow
+sword 1
+red_slime
+door yellow
+green_slime
+key yellow
+key yellow
+key yellow
+key yellow
+# Floor 4
+door yellow
+priest
+red_crystal 1
+red_elixir 1
+# Floor 5
+bat
+key yellow
+door yellow
+red_slime
+bat
+door yellow
+# Floor 6
+red_slime
+priest
+key yellow
+door yellow
+red_slime
+key yellow
+key yellow
+key yellow
+key yellow
+door yellow
+door yellow
+door yellow
+red_slime
+# Floor 7
+door yellow
+door yellow
+priest
+skeleton_b
+merchant_floor7
+door yellow
+green_slime
+red_slime
+green_slime
+door yellow
+door yellow
+# Floor 8
+door yellow
+door yellow
+door yellow
+key yellow
+key yellow
+key yellow
+# Floor 9
+door yellow
+green_slime
+red_elixir 1
+shield 1
+door yellow
+door yellow
+key yellow
+key yellow
+red_crystal 1
+red_slime
+door yellow
+bat
+key yellow
+blue_crystal 1
+green_slime
+# Floor 8
+green_slime
+# Floor 7
+door yellow
+bat
+red_elixir 1
+red_crystal 1
+# Floor 6
+red_slime
+red_elixir 1
+red_elixir 1
+# Floor 5
+green_slime
+# Floor 3
+bat
+door yellow
+priest
+key yellow
+red_elixir 1
+blue_crystal 1
+# Floor 4
+green_slime
+door yellow
+bat
+green_slime
+green_slime
+key yellow
+key yellow
+key yellow
+# Floor 1
+door yellow
+bat
+priest
+bat
+door yellow
+key yellow
+red_elixir 1
+blue_crystal 1
+red_crystal 1
+# Floor 5
+door yellow
+bat
+key yellow
+key yellow
+# Floor 9
+bat
+door yellow
+door blue
+red_elixir 1
+# Floor 10
+door yellow
+skeleton_c
+blue_crystal 1
+# Floor 7
+door yellow
+bat
+key yellow
+key yellow
+# Floor 6
+skeleton_c
+green_slime
+door yellow
+bat
+blue_crystal 1
+priest
+key yellow
+green_slime
+# Floor 3
+door yellow
+skeleton_c
+key yellow
+red_elixir 1
+red_crystal 1
+# Floor 9
+door yellow
+priest
+key yellow
+red_elixir 1
+# Floor 7
+skeleton_c
+red_elixir 1
+key yellow
+key yellow
+# Floor 6
+door yellow
+bat
+red_elixir 1
+merchant_floor6
+# Floor 8
+priest
+bat
+skeleton_c
+bat
+door yellow
+green_slime
+bat
+door blue
+key yellow
+red_crystal 1
+key yellow
+blue_crystal 1
+# Floor 10
+door yellow
+priest
+priest
+door yellow
+skeleton_c
+red_crystal 1
+# Floor 1
+door yellow
+bat
+green_slime
+green_slime
+blue_elixir 1
+# Floor 5
+skeleton_b
+blue_crystal 1
+key yellow
+red_elixir 1
+orb_wisdom
+# Floor 1
+door yellow
+red_elixir 1
+skeleton_c
+door yellow
+key yellow
+skeleton_b
+door yellow
+key yellow
+key yellow
+orb_flying
+red_elixir 1
+red_elixir 1
+# Floor 3
+door yellow
+priest
+key yellow
+red_elixir 1
+# Floor 4
+priest
+door yellow
+key yellow
+key blue
+red_elixir 1
+door yellow
+red_slime
+skeleton_c
+door yellow
+skeleton_b
+key yellow
+blue_elixir 1
+# Floor 7
+skeleton_b
+blue_elixir 1
+key yellow
+key yellow
+door yellow
+red_slime
+priest
+blue_elixir 1
+# Floor 8
+priest
+door yellow
+gate-keeper_c
+gate-keeper_c
+blue_elixir 1
+red_elixir 1
+key yellow
+key yellow
+key red
+# Floor 10
+door yellow
+blue_elixir 1
+door red
+skeleton_c
+skeleton_c
+skeleton_c
+skeleton_c
+skeleton_c
+skeleton_c
+skeleton_b
+skeleton_b
+skeleton_a
+blue_elixir 1
+blue_elixir 1
+blue_elixir 1
+red_crystal 1
+red_crystal 1
+red_crystal 1
+blue_crystal 1
+blue_crystal 1
+blue_crystal 1
+key yellow
+key yellow
+key yellow
+print
