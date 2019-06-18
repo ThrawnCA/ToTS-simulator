@@ -59,5 +59,127 @@
 "altar":{"type":"altar","life":300,"offense":2,"defense":4},
 
 "magic_a":{"type":"magic","life":-200},
-"magic_b":{"type":"magic","life":-100}
+"magic_b":{"type":"magic","life":-100},
+
+"chain_floor1_crystals":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","priest","bat","yellow_door","yellow_key","red_elixir 1","blue_crystal 1","red_crystal 1"
+]},
+"chain_floor1_blue_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","green_slime","green_slime","blue_elixir 1"
+]},
+"chain_floor1_flying":{"type":"chain","sub-encounters":[
+    "yellow_door","red_elixir 1","skeleton_c","yellow_door","yellow_key","skeleton_b","yellow_door","yellow_key","yellow_key","orb_flying","red_elixir 1","red_elixir 1"
+]},
+"chain_floor3_to_stairs":{"type":"chain","sub-encounters":[
+    "blue_key","yellow_key","yellow_key","yellow_key","yellow_key","yellow_key","blue_elixir 1","blue_elixir 1","blue_elixir 1","green_slime","red_slime","yellow_door"
+]},
+"chain_floor3_blue_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","priest","yellow_key","red_elixir 1","blue_crystal 1"
+]},
+"chain_floor3_red_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_c","yellow_key","red_elixir 1","red_crystal 1"
+]},
+"chain_floor3_priest_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","priest","yellow_key","red_elixir 1"
+]},
+"chain_floor4_to_stairs":{"type":"chain","sub-encounters":[
+    "yellow_door","green_slime","red_slime","yellow_door"
+]},
+"chain_floor4_bat_keys":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","green_slime","yellow_key","yellow_key","yellow_key"
+]},
+"chain_floor4_blue_key":{"type":"chain","sub-encounters":[
+    "priest","yellow_door","yellow_key","blue_key","red_elixir 1"
+]},
+"chain_floor4_red_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","priest","red_crystal 1","red_elixir 1"
+]},
+"chain_floor4_blue_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_b","yellow_key","blue_elixir 1"
+]},
+"chain_floor5_to_sword":{"type":"chain","sub-encounters":[
+    "green_slime","green_slime","red_slime","yellow_door","sword 1"
+]},
+"chain_floor5_slime_keys":{"type":"chain","sub-encounters":[
+    "red_slime","yellow_door","green_slime","yellow_key","yellow_key","yellow_key","yellow_key"
+]},
+"chain_floor5_bat_keys":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","yellow_key","yellow_key"
+]},
+"chain_floor5_wisdom":{"type":"chain","sub-encounters":[
+    "skeleton_b","blue_crystal 1","yellow_key","red_elixir 1","orb_wisdom"
+]},
+"chain_floor5_to_stairs":{"type":"chain","sub-encounters":[
+    "bat","yellow_key","yellow_door","red_slime","bat","yellow_door"
+]},
+"chain_floor6_keys_via_monsters":{"type":"chain","sub-encounters":[
+    "red_slime","priest","yellow_key","yellow_door","red_slime","yellow_key","yellow_key","yellow_key","yellow_key"
+]},
+"chain_floor6_red_elixirs":{"type":"chain","sub-encounters":[
+    "red_slime","red_elixir 1","red_elixir 1"
+]},
+"chain_floor6_crystal_via_bat":{"type":"chain","sub-encounters":[
+    "skeleton_c","green_slime","yellow_door","bat","blue_crystal 1"
+]},
+"chain_floor6_merchant_blue_key":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","red_elixir 1","merchant_floor6"
+]},
+"chain_floor6_to_stairs":{"type":"chain","sub-encounters":[
+    "yellow_door","yellow_door","yellow_door","red_slime"
+]},
+"chain_floor7_merchant_via_skeleton":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_b","merchant_floor7"
+]},
+"chain_floor7_red_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","red_elixir 1","red_crystal 1"
+]},
+"chain_floor7_bat_keys":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","yellow_key","yellow_key"
+]},
+"chain_floor7_skeleton_c_keys":{"type":"chain","sub-encounters":[
+    "skeleton_c","red_elixir 1","yellow_key","yellow_key"
+]},
+"chain_floor7_skeleton_b_keys":{"type":"chain","sub-encounters":[
+    "skeleton_b","blue_elixir 1","yellow_key","yellow_key"
+]},
+"chain_floor7_priest_blue_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","red_slime","priest","blue_elixir 1"
+]},
+"chain_floor7_skeleton_bypass":{"type":"chain","sub-encounters":[
+    "yellow_door","green_slime","red_slime","green_slime","yellow_door","yellow_door"
+]},
+"chain_floor8_to_stairs":{"type":"chain","sub-encounters":[
+    "yellow_door","yellow_door","yellow_door","yellow_key","yellow_key","yellow_key"
+]},
+"chain_floor8_crystals":{"type":"chain","sub-encounters":[
+    "yellow_door","green_slime","bat","blue_door","yellow_key","red_crystal 1","yellow_key","blue_crystal 1"
+]},
+"chain_floor8_gate-keepers":{"type":"chain","sub-encounters":[
+    "yellow_door","gate-keeper_c","gate-keeper_c","blue_elixir 1","red_elixir 1","yellow_key","yellow_key","red_key"
+]},
+"chain_floor9_shield":{"type":"chain","sub-encounters":[
+    "yellow_door","green_slime","red_elixir 1","shield 1"
+]},
+"chain_floor9_blue_crystal_via_bat":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","yellow_key","blue_crystal 1"
+]},
+"chain_floor9_priest_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","priest","yellow_key","red_elixir 1"
+]},
+"chain_floor9_to_stairs":{"type":"chain","sub-encounters":[
+    "yellow_door","blue_door","red_elixir 1"
+]},
+"chain_floor10_blue_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_c","blue_crystal 1"
+]},
+"chain_floor10_red_crystal":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_c","red_crystal 1"
+]},
+"chain_floor10_blue_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","blue_elixir 1"
+]},
+"chain_floor10_boss":{"type":"chain","sub-encounters":[
+    "red_door","skeleton_c","skeleton_c","skeleton_c","skeleton_c","skeleton_c","skeleton_c","skeleton_b","skeleton_b","skeleton_a","# Post-boss","blue_elixir 1","blue_elixir 1","blue_elixir 1","red_crystal 1","red_crystal 1","red_crystal 1","blue_crystal 1","blue_crystal 1","blue_crystal 1","yellow_key","yellow_key","yellow_key"
+]}
+
 }

@@ -97,6 +97,10 @@ def altar_encounter(encounter, args):
     else:
         raise Exception("Unrecognised altar upgrade: {}, must be offense/defense/life".format(stat))
 
+def do_encounter_chain(encounter):
+    for sub_encounter_line in encounter['sub-encounters']:
+        do_encounter_line(sub_encounter_line)
+
 def do_encounter(args):
     encounter_name = args[0]
     if encounter_name in encounters:
@@ -108,10 +112,22 @@ def do_encounter(args):
             monster_encounter(encounter, args)
         elif encounter['type'] == 'altar':
             altar_encounter(encounter, args)
+        elif encounter['type'] == 'chain':
+            do_encounter_chain(encounter)
+            encounters.pop(encounter_name)
         else:
             raise Exception("Not implemented: {}".format(encounter['type']))
     else:
-        raise Exception("Unrecognised encounter: {}".format(encounter_name))
+        raise Exception("Unrecognised or duplicate encounter: {}".format(encounter_name))
+
+def do_encounter_line(line):
+    if line.startswith('#'):
+        print line[1:]
+        print_stats()
+    elif line == 'print':
+        print_stats()
+    else:
+        do_encounter(line.split())
 
 if len(sys.argv) > 1:
     simulation_file = sys.argv[1]
@@ -139,12 +155,6 @@ else:
     hero.keys['red'] = 0
 
 while line:
-    if line.startswith('#'):
-        print line[1:]
-        print_stats()
-    elif line == 'print':
-        print_stats()
-    else:
-        do_encounter(line.split())
+    do_encounter_line(line)
     line = simulation.readline().strip()
 
