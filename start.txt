@@ -8,6 +8,7 @@ chain_floor5_to_sword
 chain_floor5_slime_keys
 # Floor 4
 chain_floor4_red_crystal
+chain_floor4_bat_keys
 # Floor 5
 chain_floor5_to_stairs
 # Floor 6
@@ -16,6 +17,8 @@ chain_floor6_to_stairs
 # Floor 7
 yellow_door
 priest
+# Floor 7
+chain_floor7_red_crystal
 chain_floor7_merchant_via_skeleton
 chain_floor7_skeleton_bypass
 # Floor 8
@@ -32,19 +35,17 @@ red_slime
 chain_floor9_blue_crystal_via_bat
 # Floor 8
 green_slime
-# Floor 7
-chain_floor7_red_crystal
 # Floor 6
 chain_floor6_red_elixirs
 # Floor 5
 green_slime
+# Floor 4
+chain_floor4_slime_key
+green_slime
+green_slime
 # Floor 3
 bat
 chain_floor3_blue_crystal
-# Floor 4
-chain_floor4_bat_keys
-green_slime
-green_slime
 # Floor 1
 chain_floor1_crystals
 # Floor 5
@@ -61,10 +62,6 @@ chain_floor6_crystal_via_bat
 priest
 yellow_key
 green_slime
-# Floor 3
-chain_floor3_red_crystal
-# Floor 7
-chain_floor7_skeleton_c_keys
 # Floor 6
 chain_floor6_merchant_blue_key
 # Floor 8
@@ -73,21 +70,26 @@ bat
 skeleton_c
 bat
 chain_floor8_crystals
+# Floor 3
+chain_floor3_red_crystal
+# Floor 5
+chain_floor5_wisdom
+# Floor 7
+chain_floor7_skeleton_c_keys
 # Floor 10
 yellow_door
 priest
 priest
 chain_floor10_red_crystal
-# Floor 1
-chain_floor1_blue_elixir
-# Floor 5
-chain_floor5_wisdom
+chain_floor10_blue_elixir
 # Floor 4
 chain_floor4_blue_key
 yellow_door
 red_slime
 skeleton_c
 chain_floor4_blue_elixir
+# Floor 1
+chain_floor1_blue_elixir
 # Floor 7
 chain_floor7_skeleton_b_keys
 chain_floor7_priest_blue_elixir
@@ -95,7 +97,6 @@ chain_floor7_priest_blue_elixir
 priest
 chain_floor8_gate-keepers
 # Floor 10
-chain_floor10_blue_elixir
 chain_floor10_boss
 # Floor 9
 chain_floor9_priest_elixir
