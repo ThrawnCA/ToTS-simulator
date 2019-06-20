@@ -9,6 +9,7 @@ chain_floor5_slime_keys
 # Floor 4
 chain_floor4_red_crystal
 chain_floor4_bat_keys
+chain_floor4_slime_key
 # Floor 5
 chain_floor5_to_stairs
 # Floor 6
@@ -18,8 +19,9 @@ chain_floor6_to_stairs
 yellow_door
 priest
 chain_floor7_red_crystal
-chain_floor7_merchant_via_skeleton
-chain_floor7_skeleton_bypass
+chain_floor7_bat_keys
+skeleton_b
+yellow_door
 # Floor 8
 chain_floor8_to_stairs
 # Floor 9
@@ -39,7 +41,6 @@ chain_floor6_red_elixirs
 # Floor 5
 green_slime
 # Floor 4
-chain_floor4_slime_key
 green_slime
 green_slime
 # Floor 3
@@ -54,14 +55,23 @@ bat
 chain_floor9_to_stairs
 # Floor 10
 chain_floor10_blue_crystal
-# Floor 7
-chain_floor7_bat_keys
 # Floor 6
-chain_floor6_crystal_via_bat
 priest
 yellow_key
+# Floor 7
+chain_floor7_merchant_via_skeleton
+# Floor 6
+chain_floor6_crystal_via_bat
 green_slime
 chain_floor6_merchant_blue_key
+# Floor 1
+chain_floor1_blue_elixir
+# Floor 3
+chain_floor3_priest_elixir
+# Floor 4
+chain_floor4_blue_key
+# Floor 9
+chain_floor9_priest_elixir
 # Floor 8
 priest
 bat
@@ -81,13 +91,10 @@ priest
 chain_floor10_red_crystal
 chain_floor10_blue_elixir
 # Floor 4
-chain_floor4_blue_key
 yellow_door
 red_slime
 skeleton_c
 chain_floor4_blue_elixir
-# Floor 1
-chain_floor1_blue_elixir
 # Floor 7
 chain_floor7_skeleton_b_keys
 chain_floor7_priest_blue_elixir
@@ -96,10 +103,51 @@ priest
 chain_floor8_gate-keepers
 # Floor 10
 chain_floor10_boss
+# Floor 11
+bat
+# Floor 12
+chain_floor12_to_altar
+altar 2 offense
+altar 2 offense
+altar 2 defense
+bat
 # Floor 9
-chain_floor9_priest_elixir
-# Floor 3
-chain_floor3_priest_elixir
+priest
+# Floor 6
+priest
+# Floor 5
+priest
+# Floor 14
+chain_floor14_to_stairs
+# Floor 4
+#chain_floor4_blue_key
+# Floor 12
+altar 2 defense
+# Floor 11
+chain_floor11_keys
+# Floor 15
+chain_floor15_to_stairs
+# Floor 16
+chain_floor16_to_stairs_via_blue_door
+chain_floor16_crystals
+# Floor 17
+chain_floor17_sword
+# Floor 11
+chain_floor11_key_via_monsters
+chain_floor11_red_crystal
+yellow_door
+big_bat
+yellow_door
+superion_priest
+red_elixir 2
+big_slime
+yellow_door
+big_bat
+blue_elixir 2
+chain_floor11_shield
+# Floor 9
+skeleton_b
+yellow_key
 # Floor 1
 chain_floor1_flying
-# Expected: Stats={'offense': 30, 'life': 830, 'defense': 30, 'gold': 264},keys={'blue': 1, 'red': 0, 'yellow': 5},inventory={u'orb_flying': 1, u'orb_wisdom': 1}
+# Expected: {'offense': 62, 'life': 888, 'defense': 68, 'gold': 269},keys={'blue': 0, 'red': 0, 'yellow': 3},inventory={u'orb_flying': 1, u'orb_wisdom': 1}
