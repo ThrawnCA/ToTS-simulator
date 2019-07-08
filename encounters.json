@@ -12,12 +12,12 @@
 "big_slime":{"type":"monster","life":130,"offense":60,"defense":3,"gold":8},
 "big_bat":{"type":"monster","life":60,"offense":100,"defense":8,"gold":12},
 "superion_priest":{"type":"monster","life":100,"offense":95,"defense":30,"gold":22},
-"zombie":{"type":"monster","life":260,"offense":85,"defense":5,"gold":18},
-"zombie_knight":{"type":"monster","life":320,"offense":120,"defense":15,"gold":30},
+"zombie":{"type":"monster","life":260,"offense":85,"defense":5,"gold":18,"bane":"cross"},
+"zombie_knight":{"type":"monster","life":320,"offense":120,"defense":15,"gold":30,"bane":"cross"},
 "rock":{"type":"monster","life":20,"offense":100,"defense":68,"gold":28},
 "slime_man":{"type":"monster","life":320,"offense":140,"defense":20,"gold":30},
 "giant_octopus":{"type":"monster","life":1200,"offense":180,"defense":20,"gold":50},
-"vampire":{"type":"monster","life":444,"offense":199,"defense":66,"gold":144},
+"vampire":{"type":"monster","life":444,"offense":199,"defense":66,"gold":144,"bane":"cross"},
 
 "magic_master":{"type":"monster","life":5000,"offense":560,"defense":310,"gold":1000},
 
@@ -51,8 +51,13 @@
 "blue_door":{"type":"simple","keys":{"blue":-1}},
 "red_door":{"type":"simple","keys":{"red":-1}},
 
-"orb_flying":{"type":"simple","inventory":{"orb_flying":1}},
-"orb_wisdom":{"type":"simple","inventory":{"orb_wisdom":1}},
+"orb_flying":{"type":"simple","inventory":{"orb_flying":0}},
+"orb_wisdom":{"type":"simple","inventory":{"orb_wisdom":0}},
+"cross":{"type":"simple","inventory":{"cross":0}},
+"mattock":{"type":"simple","inventory":{"mattock":1}},
+"magic_potion":{"type":"simple","inventory":{"magic_potion":1}},
+"super_mattock":{"type":"simple","inventory":{"super_mattock":1}},
+
 "merchant_floor6":{"type":"simple","gold":-50,"keys":{"blue":1}},
 "merchant_floor7":{"type":"simple","gold":-50,"keys":{"yellow":5}},
 "merchant_floor12_left":{"type":"simple","gold":-800,"keys":{"red":1}},
@@ -71,6 +76,9 @@
 ]},
 "chain_floor1_flying":{"type":"chain","sub-encounters":[
     "yellow_door","red_elixir 1","skeleton_c","yellow_door","yellow_key","skeleton_b","yellow_door","yellow_key","yellow_key","orb_flying","red_elixir 1","red_elixir 1"
+]},
+"chain_floor2_prison":{"type":"chain","sub-encounters":[
+    "blue_door","gate-keeper_b","gate-keeper_b","yellow_key","yellow_key","yellow_key","blue_elixir 1","blue_elixir 1","blue_elixir 1"
 ]},
 "chain_floor3_to_stairs":{"type":"chain","sub-encounters":[
     "blue_key","yellow_key","yellow_key","yellow_key","yellow_key","yellow_key","blue_elixir 1","blue_elixir 1","blue_elixir 1","green_slime","red_slime","yellow_door"
@@ -156,11 +164,17 @@
 "chain_floor8_to_stairs":{"type":"chain","sub-encounters":[
     "yellow_door","yellow_door","yellow_door","yellow_key","yellow_key","yellow_key"
 ]},
+"chain_floor8_crystal_monsters":{"type":"chain","sub-encounters":[
+    "priest","bat","skeleton_c","bat"
+]},
 "chain_floor8_crystals":{"type":"chain","sub-encounters":[
     "yellow_door","green_slime","bat","blue_door","yellow_key","red_crystal 1","yellow_key","blue_crystal 1"
 ]},
 "chain_floor8_gate-keepers":{"type":"chain","sub-encounters":[
     "yellow_door","gate-keeper_c","gate-keeper_c","blue_elixir 1","red_elixir 1","yellow_key","yellow_key","red_key"
+]},
+"chain_floor8_blue_key":{"type":"chain","sub-encounters":[
+    "yellow_door","skeleton_c","skeleton_b","yellow_door","red_elixir 1","yellow_key","blue_key"
 ]},
 "chain_floor9_shield":{"type":"chain","sub-encounters":[
     "yellow_door","green_slime","red_elixir 1","shield 1"
@@ -198,11 +212,29 @@
 "chain_floor11_shield":{"type":"chain","sub-encounters":[
     "superion_priest","superion_priest","shield 2"
 ]},
+"chain_floor11_bat_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","big_bat","blue_elixir 2"
+]},
 "chain_floor12_to_altar":{"type":"chain","sub-encounters":[
     "bat","red_elixir 2","red_elixir 2"
 ]},
+"chain_floor12_keys":{"type":"chain","sub-encounters":[
+    "yellow_door","zombie","blue_key","yellow_key","yellow_key","yellow_key"
+]},
 "chain_floor12_blue_crystal_via_zombie":{"type":"chain","sub-encounters":[
     "zombie","yellow_door","big_slime","yellow_key","blue_crystal 2","red_elixir 2"
+]},
+"chain_floor12_blue_elixir":{"type":"chain","sub-encounters":[
+    "yellow_door","superion_priest","blue_elixir 2"
+]},
+"chain_floor12_red_crystal":{"type":"chain","sub-encounters":[
+    "zombie","yellow_door","superion_priest","yellow_key","red_crystal 2","yellow_key"
+]},
+"chain_floor12_red_key":{"type":"chain","sub-encounters":[
+    "yellow_door","superion_priest","yellow_door","big_bat","merchant_floor12_left"
+]},
+"chain_floor12_to_stairs":{"type":"chain","sub-encounters":[
+    "bat"
 ]},
 "chain_floor13_sword":{"type":"chain","sub-encounters":[
     "yellow_door","use_item snow_crystal","sword 10"
@@ -216,14 +248,29 @@
 "chain_floor14_crystal_via_zombie":{"type":"chain","sub-encounters":[
     "yellow_door","zombie_knight","red_elixir 2","yellow_key","blue_crystal 2"
 ]},
+"chain_floor14_blue_key":{"type":"chain","sub-encounters":[
+    "yellow_door","superion_priest","blue_key"
+]},
+"chain_floor14_red_key":{"type":"chain","sub-encounters":[
+    "blue_door","zombie_knight","zombie_knight","zombie_knight","red_key"
+]},
 "chain_floor15_to_stairs":{"type":"chain","sub-encounters":[
     "yellow_door","bat","bat","yellow_door","yellow_door","big_bat","yellow_door","big_slime"
+]},
+"chain_floor15_full_octopus":{"type":"chain","sub-encounters":[
+    "giant_octopus","giant_octopus","giant_octopus","giant_octopus","giant_octopus","giant_octopus","giant_octopus","giant_octopus","giant_octopus","mattock"
 ]},
 "chain_floor15_blue_elixir":{"type":"chain","sub-encounters":[
     "superion_priest","blue_elixir 2"
 ]},
+"chain_floor15_keys_via_monsters":{"type":"chain","sub-encounters":[
+    "yellow_door","yellow_door","big_slime","big_bat","superion_priest","big_bat","yellow_key","blue_key","yellow_key"
+]},
 "chain_floor16_keys_via_bat":{"type":"chain","sub-encounters":[
     "yellow_door","big_bat","yellow_key","yellow_key","yellow_key"
+]},
+"chain_floor16_blue_key_via_priest":{"type":"chain","sub-encounters":[
+    "yellow_door","superion_priest","yellow_door","blue_key"
 ]},
 "chain_floor16_to_stairs_via_blue_door":{"type":"chain","sub-encounters":[
     "yellow_key","blue_door","red_elixir 2","yellow_key","yellow_door"
@@ -231,7 +278,52 @@
 "chain_floor16_crystals":{"type":"chain","sub-encounters":[
     "yellow_door","big_slime","yellow_key","yellow_key","blue_crystal 2","red_crystal 2","red_elixir 2"
 ]},
+"chain_floor16_magic_potion":{"type":"chain","sub-encounters":[
+    "slime_man","magic_potion"
+]},
 "chain_floor17_sword":{"type":"chain","sub-encounters":[
     "big_bat","red_elixir 2","yellow_door","gate-keeper_c","gate-keeper_c","gate-keeper_c","gate-keeper_c","sword 2"
+]},
+"chain_floor17_elixir":{"type":"chain","sub-encounters":[
+    "big_bat","red_elixir 2"
+]},
+"chain_floor17_blue_door_monsters":{"type":"chain","sub-encounters":[
+    "superion_priest","big_slime","blue_door","big_bat"
+]},
+"chain_floor17_yellow_door_monsters":{"type":"chain","sub-encounters":[
+    "superion_priest","zombie","yellow_door","zombie_knight"
+]},
+"chain_floor17_crystals":{"type":"chain","sub-encounters":[
+    "yellow_door","zombie","zombie","zombie_knight","zombie_knight","yellow_key","yellow_key","blue_elixir 2","blue_crystal 2","red_crystal 2"
+]},
+"chain_floor18_keys":{"type":"chain","sub-encounters":[
+    "yellow_door","superion_priest","yellow_key","yellow_key","blue_key","yellow_key","yellow_key"
+]},
+"chain_floor18_access_south":{"type":"chain","sub-encounters":[
+    "blue_door"
+]},
+"chain_floor18_slimes":{"type":"chain","sub-encounters":[
+    "yellow_door","big_slime","big_slime","big_slime","big_slime","yellow_key"
+]},
+"chain_floor18_bats":{"type":"chain","sub-encounters":[
+    "yellow_door","big_bat","big_bat","big_bat","big_bat","yellow_key"
+]},
+"chain_floor18_red_crystal":{"type":"chain","sub-encounters":[
+    "zombie","yellow_door","superion_priest","yellow_key","red_elixir 2","red_crystal 2"
+]},
+"chain_floor18_blue_crystal":{"type":"chain","sub-encounters":[
+    "rock","yellow_door","superion_priest","yellow_key","red_elixir 2","blue_crystal 2"
+]},
+"chain_floor18_to_stairs_via_yellow_door":{"type":"chain","sub-encounters":[
+    "zombie_knight","yellow_door","red_elixir 2","yellow_door"
+]},
+"chain_floor19_to_stairs_without_zombies":{"type":"chain","sub-encounters":[
+    "yellow_door","bat","yellow_door","big_bat","yellow_door","big_slime","big_bat","yellow_door","yellow_key","yellow_key"
+]},
+"chain_floor19_cross":{"type":"chain","sub-encounters":[
+    "blue_door","rock","yellow_key","cross"
+]},
+"chain_floor22_magic_master":{"type":"chain","sub-encounters":[
+    "red_door","magic_master","red_key","red_key","red_key","red_key","red_key"
 ]}
 }
