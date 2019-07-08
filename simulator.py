@@ -4,6 +4,10 @@ with open('encounters.json') as json_file:
     encounters = json.load(json_file)
 
 DEBUG = False
+OFFENSE_STAT = 'offense'
+DEFENCE_STAT = 'defense'
+LIFE_STAT = 'life'
+GOLD_STAT = 'gold'
 
 class Hero:
     stats = {}
@@ -25,7 +29,7 @@ def simple_encounter(encounter, args):
         multiplier = int(args[1])
     else:
         multiplier = 1
-    for stat in ['offense', 'defense', 'life', 'gold']:
+    for stat in [OFFENSE_STAT, DEFENCE_STAT, LIFE_STAT, GOLD_STAT]:
         if stat in encounter:
             hero.stats[stat] += encounter[stat] * multiplier
             if hero.stats[stat] < 0:
@@ -45,21 +49,24 @@ def simple_encounter(encounter, args):
                 raise Exception("Not enough uses of {}".format(item))
 
 def monster_encounter(encounter, args):
-    if encounter['defense'] >= hero.stats['offense']:
+    hero_offense = hero.stats[OFFENSE_STAT]
+    if 'bane' in encounter and encounter['bane'] in hero.inventory:
+        hero_offense *= 2
+    if encounter[DEFENCE_STAT] >= hero_offense:
         raise Exception("Not enough offensive power to attack this monster!")
-    monster_life = encounter['life']
+    monster_life = encounter[LIFE_STAT]
     in_battle = True
     while in_battle:
-        monster_life -= max(hero.stats['offense'] - encounter['defense'], 0)
+        monster_life -= max(hero_offense - encounter[DEFENCE_STAT], 0)
         if monster_life <= 0:
             monster_life = 0
             in_battle = False
         if in_battle:
-            hero.stats['life'] -= max(encounter['offense'] - hero.stats['defense'], 0)
-            if hero.stats['life'] <= 0:
-                hero.stats['life'] = 0
+            hero.stats[LIFE_STAT] -= max(encounter[OFFENSE_STAT] - hero.stats[DEFENCE_STAT], 0)
+            if hero.stats[LIFE_STAT] <= 0:
+                hero.stats[LIFE_STAT] = 0
                 raise Exception("Died!")
-    hero.stats['gold'] += encounter['gold']
+    hero.stats[GOLD_STAT] += encounter[GOLD_STAT]
 
 def altar_encounter(encounter, args):
     if len(args) < 3:
@@ -81,19 +88,19 @@ def altar_encounter(encounter, args):
 
     cost = altar_cost(hero.altar_uses)
     debug("Altar will cost {} gold.".format(cost))
-    if hero.stats['gold'] >= cost:
-        hero.stats['gold'] -= cost
+    if hero.stats[GOLD_STAT] >= cost:
+        hero.stats[GOLD_STAT] -= cost
         hero.altar_uses += 1
     else:
         raise Exception("Not enough gold to use altar!")
     multiplier = int(args[1])
     stat = args[2]
-    if stat == 'offense':
-        hero.stats[stat] += encounter['offense'] * multiplier
-    elif stat == 'defense':
-        hero.stats[stat] += encounter['defense'] * multiplier
-    elif stat == 'life':
-        hero.stats[stat] += encounter['life'] * multiplier
+    if stat == OFFENSE_STAT:
+        hero.stats[stat] += encounter[OFFENSE_STAT] * multiplier
+    elif stat == DEFENCE_STAT:
+        hero.stats[stat] += encounter[DEFENCE_STAT] * multiplier
+    elif stat == LIFE_STAT:
+        hero.stats[stat] += encounter[LIFE_STAT] * multiplier
     else:
         raise Exception("Unrecognised altar upgrade: {}, must be offense/defense/life".format(stat))
 
@@ -137,19 +144,19 @@ simulation = open(simulation_file)
 line = simulation.readline().strip()
 if line.startswith('Start'):
     stats_string = line.split(' ')[1].split('/')
-    hero.stats['life'] = int(stats_string[0])
-    hero.stats['offense'] = int(stats_string[1])
-    hero.stats['defense'] = int(stats_string[2])
-    hero.stats['gold'] = int(stats_string[3])
+    hero.stats[LIFE_STAT] = int(stats_string[0])
+    hero.stats[OFFENSE_STAT] = int(stats_string[1])
+    hero.stats[DEFENCE_STAT] = int(stats_string[2])
+    hero.stats[GOLD_STAT] = int(stats_string[3])
     hero.keys['yellow'] = int(stats_string[4])
     hero.keys['blue'] = int(stats_string[5])
     hero.keys['red'] = int(stats_string[6])
     line = simulation.readline().strip()
 else:
-    hero.stats['life'] = 1000
-    hero.stats['offense'] = 100
-    hero.stats['defense'] = 100
-    hero.stats['gold'] = 0
+    hero.stats[LIFE_STAT] = 1000
+    hero.stats[OFFENSE_STAT] = 100
+    hero.stats[DEFENCE_STAT] = 100
+    hero.stats[GOLD_STAT] = 0
     hero.keys['yellow'] = 0
     hero.keys['blue'] = 0
     hero.keys['red'] = 0
