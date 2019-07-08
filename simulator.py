@@ -117,7 +117,12 @@ def do_encounter_chain(encounter):
 
 def do_encounter(args):
     encounter_name = args[0]
-    if encounter_name in encounters:
+    if encounter_name.isdigit():
+        encounter_count = int(encounter_name)
+        debug("Running {} encounter {} times".format(args[1], encounter_count))
+        for encounter_index in range(0, encounter_count):
+            do_encounter(args[1:])
+    elif encounter_name in encounters:
         encounter = encounters[encounter_name]
         debug("Found {}: {}".format(encounter_name, encounter))
         if encounter['type'] == 'simple':
