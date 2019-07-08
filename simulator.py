@@ -55,6 +55,16 @@ def monster_encounter(encounter, args):
     if encounter[DEFENCE_STAT] >= hero_offense:
         raise Exception("Not enough offensive power to attack this monster!")
     monster_life = encounter[LIFE_STAT]
+
+    def monster_attack():
+        hero.stats[LIFE_STAT] -= max(encounter[OFFENSE_STAT] - hero.stats[DEFENCE_STAT], 0)
+        if hero.stats[LIFE_STAT] <= 0:
+            hero.stats[LIFE_STAT] = 0
+            raise Exception("Died!")
+
+    if len(args) > 1 and args[1] == 'ambush':
+        monster_attack()
+
     in_battle = True
     while in_battle:
         monster_life -= max(hero_offense - encounter[DEFENCE_STAT], 0)
@@ -62,10 +72,7 @@ def monster_encounter(encounter, args):
             monster_life = 0
             in_battle = False
         if in_battle:
-            hero.stats[LIFE_STAT] -= max(encounter[OFFENSE_STAT] - hero.stats[DEFENCE_STAT], 0)
-            if hero.stats[LIFE_STAT] <= 0:
-                hero.stats[LIFE_STAT] = 0
-                raise Exception("Died!")
+            monster_attack()
     hero.stats[GOLD_STAT] += encounter[GOLD_STAT]
 
 def altar_encounter(encounter, args):
