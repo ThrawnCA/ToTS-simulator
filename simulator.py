@@ -134,6 +134,14 @@ def do_encounter(args):
         elif encounter['type'] == 'chain':
             do_encounter_chain(encounter)
             encounters.pop(encounter_name)
+        elif encounter['type'] == 'special':
+            if encounter_name == 'use_item':
+                item = args[1]
+                hero.inventory[item] -= 1
+                if hero.inventory[item] < 0:
+                    raise Exception("Not enough uses of {}".format(item))
+            else:
+                raise Exception("Not implemented: special encounter '{}'".format(encounter_name))
         else:
             raise Exception("Not implemented: {}".format(encounter['type']))
     else:
