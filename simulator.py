@@ -73,7 +73,10 @@ def monster_encounter(encounter, args):
             in_battle = False
         if in_battle:
             monster_attack()
-    hero.stats[GOLD_STAT] += encounter[GOLD_STAT]
+    gold = encounter[GOLD_STAT]
+    if 'lucky_gold' in hero.inventory:
+        gold *= 2
+    hero.stats[GOLD_STAT] += gold
 
 def altar_encounter(encounter, args):
     if len(args) < 3:

@@ -51,6 +51,7 @@
 "blue_door":{"type":"simple","keys":{"blue":-1}},
 "red_door":{"type":"simple","keys":{"red":-1}},
 
+"lucky_gold":{"type":"simple","inventory":{"lucky_gold":0}},
 "orb_flying":{"type":"simple","inventory":{"orb_flying":0}},
 "orb_wisdom":{"type":"simple","inventory":{"orb_wisdom":0}},
 "cross":{"type":"simple","inventory":{"cross":0}},
