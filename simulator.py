@@ -184,4 +184,5 @@ else:
 while line:
     do_encounter_line(line)
     line = simulation.readline().strip()
+print_stats()
 
